@@ -1,0 +1,25 @@
+<div>
+
+<button (click)="get_products()"> Get Products</button>
+<button (click)="get_products2()"> Get Products via Subscribe</button>
+<button (click)="makepromise()"> Get Products via promise</button>
+<button (click)="simpleobservable()"> Get Simple Observable</button>
+<button (click)="complexobservable()"> Get Complex Observable</button>
+</div>
+
+<h1>Asych Pipe (On-Load)</h1>
+
+<li *ngFor="let product of productsObservable | async">
+   -- Id {{product.id}}
+   -- Name {{product.name}}
+   -- Cost {{product.cost}}
+   -- Quantity {{product.quantity}}
+</li>
+<h1>Observable Invocation</h1>
+
+<li *ngFor="let product of products2">
+   -- Id {{product.id}}
+   -- Name {{product.name}}
+   -- Cost {{product.cost}}
+   -- Quantity {{product.quantity}}
+</li>

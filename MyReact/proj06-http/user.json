@@ -1,0 +1,61 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "userid": "siva@gmail.com",
+      "password": "siva123",
+      "role": "super-admin",
+      "country": "IN"
+    },
+    {
+      "id": 2,
+      "userid": "isha@gmail.com",
+      "password": "isha123",
+      "role": "app-admin",
+      "country": "SG"
+    }
+  ],
+  "cities": [
+    {
+      "id": 1,
+      "name": "Chennai"
+    },
+    {
+      "id": 2,
+      "name": "Madurai"
+    },
+    {
+      "id": 3,
+      "name": "Kovilpatti"
+    },
+    {
+      "id": 4,
+      "name": "Tanjore"
+    },
+    {
+      "id": 5,
+      "name": "Vellor"
+    },
+    {
+      "id": 6,
+      "name": "Rajapalaiyam"
+    }
+  ],
+  "utype": [
+    {
+      "id": 1,
+      "name": "Internal"
+    },
+    {
+      "id": 2,
+      "name": "External"
+    },
+    {
+      "id": 3,
+      "name": "Vendor"
+    }
+  ],
+  "user": [
+    
+  ]
+}
