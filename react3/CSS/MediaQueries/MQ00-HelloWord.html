@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Media Queries: width</title>
+    <style>
+      body {
+        font-size: 1em;
+        color:green;
+      }
+
+      @media all and (max-width:600px) {
+        p {
+            color:yellow;
+        }
+
+        .super {
+            color:blue;
+            font-size: 2rem;
+        }
+
+      }
+
+      @media (orientation:landscape) {
+        .super {
+            color:coral;
+            font-size: 4rem;
+        } 
+      }
+
+      @media (orientation:portrait) {
+        .star {
+            color:greenyellow;
+            font-size: 4rem;
+        } 
+      }
+
+      @media (orientation:landscape) and (max-width:500px){
+        .super {
+            color:grey;
+            font-size: 3rem;
+        } 
+      }
+      /* comma for or operator */
+      @media (orientation:portrait) , (max-width:500px) {
+        .star {
+            color:brown;
+            font-size: 9rem;
+        } 
+      }
+
+
+    </style>
+</head>
+
+<body>
+
+    <p>Text 1</p>
+
+    <div class="super">SuperStar</div>
+
+    <div class="star">My SuperStar</div>
+</body>
+
+</html>
